@@ -1,0 +1,13 @@
+﻿@model RazorApp.Services.NewsListViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div style="border:solid 1px silver;">
+    <div>
+        @Html.ActionLink(@Model.Title, "Detail", new {id=@Model.Alias});
+    </div>
+    <div>
+        @Model.Excerpt
+    </div>
+</div>
