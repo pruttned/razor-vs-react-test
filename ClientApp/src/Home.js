@@ -7,7 +7,7 @@ import 'isomorphic-fetch';
 import styled from 'styled-components';
 
 const NewsItemRoot = styled.div`
-  border: solid 1px silver;
+  border: solid 1px green;
   padding: 5px;
   max-width: 600px;
   margin-bottom: 10px;
@@ -45,6 +45,7 @@ const Home = (props) => {
     <Layout>
       {data ?
         <div>
+          <div> <img src={logo} className="Home-logo" alt="logo" /></div>
           {data.news.map(nn => (<NewsItem key={nn.alias} {...nn} ></NewsItem>))}
         </div> :
         <div>loading..</div>
