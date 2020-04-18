@@ -39,8 +39,9 @@ namespace RazorApp.Controllers
             {
                 News = _newsService.GetAll(10)
             };
-            var result = await _nodeJSService.InvokeFromFileAsync<string>("./render.js", args: new object[] { "/Home/IndexReact", "http://localhost:5000", model });
-            return Content(result, "text/html");
+            return Ok(model);
+            // var result = await _nodeJSService.InvokeFromFileAsync<string>("./render.js", args: new object[] { "/Home/IndexReact", "http://localhost:5000", model });
+            // return Content(result, "text/html");
         }
 
         public async Task<IActionResult> IndexReact2()
