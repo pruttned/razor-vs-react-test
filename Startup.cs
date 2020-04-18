@@ -4,8 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using JavaScriptEngineSwitcher.ChakraCore;
-using JavaScriptEngineSwitcher.Extensions.MsDependencyInjection;
 using Jering.Javascript.NodeJS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
