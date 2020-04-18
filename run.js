@@ -6,6 +6,5 @@ async function run() {
 };
 run().catch(e => console.log(e));
 
-console.log();
 // console.log('----------------------');
 // console.log(server('/detail/news1'));
